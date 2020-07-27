@@ -61,7 +61,7 @@ The exploitation of benthic species by artisanal fishers in coastal management a
 
 # Acknowledgements
 
-Partial support for LC and FJT was provided by COPAS Sur-Austral (CONICYT PIA APOYO CCTE AFB170006). FJT also acknowledges partial support from INCAR (CONICYT FONDAP grant 15110027). All code used to generate this paper, as well as prior versions of this manuscript, are available at: [github.com/LuisACubillos/](https://github.com/LuisACubillos/). 
+Partial support for LC and FJT was provided by COPAS Sur-Austral (CONICYT PIA APOYO CCTE AFB170006). FJT also acknowledges partial support from INCAR (CONICYT FONDAP grant 15110027). All code used to generate this paper, as well as prior versions of this manuscript, are available at: [github.com/LuisACubillos/](https://github.com/LuisACubillos/surfclampap). 
 
 \FloatBarrier
 
