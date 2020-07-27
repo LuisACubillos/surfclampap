@@ -1,0 +1,1169 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[12pt]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={Assessing a management procedure for a benthic species with non-annual recruitment, the case of the surf clam (Mesodesma donacium, Lamarck 1888) in northern Patagonia, Chile.},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,headheight=12pt,letterpaper]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{lineno}
+\usepackage{placeins}
+\usepackage{authblk}
+
+\linenumbers
+\linespread{1}
+\author[1,3,4]{Aldo Hernández}
+\author[1,2,*]{Luis A. Cubillos}
+\author[3]{Nicolás Muñoz}
+\author[2,4]{Fabián J. Tapia}
+\author[3]{Carlos Leal}
+\affil[1]{Doctorado en Ciencias con mención en Manejo de Recursos Acuaticos Renovables, Universidad de Concepción, Concepción, Chile.}
+\affil[2]{Centro de Investigación Oceanográfica COPAS Sur-Austral, Departamento de Oceanografía, Universidad de Concepción, Casilla 160-C,Concepción, Chile.}
+\affil[3]{Centro de Investigación en Recursos Naturales, Holon SpA. Concepción, Chile.}
+\affil[4]{Centro Interdisciplinario para la Investigación Acuícola (INCAR), Universidad de Concepción, Concepción, Chile.}
+\affil[*]{Corresponding author. Email: lucubillos@udec.cl}
+\linespread{1.5}
+\usepackage{lineno} \usepackage{placeins} \linenumbers
+
+\title{Assessing a management procedure for a benthic species with non-annual
+recruitment, the case of the surf clam (Mesodesma donacium, Lamarck
+1888) in northern Patagonia, Chile.}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+The exploitation of benthic species by artisanal fishers in coastal
+management areas is expected to be sustainable when there is a
+management procedure (MP), in which data from direct stock assessments
+are the main input to estimate annual quotas. Nevertheless, the adequacy
+of such an MP has not been assessed for cases where recruitment does not
+occur or is not observed consistently in the annual surveys. One such
+case is the fishery for surf clam Mesodesma donacium in northern
+Patagonia, which thus far has been managed as though the population
+biomass was sustained by annual recruitment, despite the frequent lack
+of small-sized individuals found by stock assessment surveys. Here, we
+used data from annual stock assessments of M. donacium conducted in
+2011-2017 at Cucao beach, to condition an operating model for the
+population dynamics of this species. During this period, six catch
+quotas were established applying the current MP, which aims to harvest
+25\% of the vulnerable stock. Simulations based on the operating model
+indicated that recruitment occurs every 2-3 years and that the current
+exploitation rate of 25\% implies an 80\% probability of future
+collapse. Exploitation rates below 15\% are required to ensure the
+sustainability of this fishery. These results highlight the need to
+consider medium-term approaches in MPs, and to establish how often the
+existence of annual recruitment is a valid assumption in the management
+of benthic fisheries. In order to improve the MP currently utilized in
+most artisanal fisheries along the Chilean coast, and probably other
+regions, it is advisable to study alternative harvest-control rules, and
+to take advantage of direct annual estimates of biomass to develop
+integrated stock-assessment models.
+
+\textbf{Key words}: data-poor fisheries, management strategy evaluation,
+artisanal-fisher, management areas.
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Reproductive processes strongly influence the distribution and abundance
+patterns of benthic species. These aspects are influenced mainly by
+local coastal dynamics, which can transport or retain larvae near
+spawning areas, modify the duration of larval development through
+changes in water temperature (O'Connor et al., 2007), and affect the
+distribution of adults (Bhaud, 1993; Giangrande et al., 1994; Grantham
+et al., 2003; Ospina-Alvarez et al., 2020). Moreover, the recruitment of
+benthic species depends on reproductive success, larval abundance and
+dispersal, settlement success, and post-settlement survival under
+environmental conditions that may be subject to anthropogenic effects
+(Hunt and Scheibling, 1997; Ouréns et al., 2014). All of these factors
+interact at different scales, inducing high levels of spatial and
+temporal variability in recruitment (Pineda, 2000; Botsford, 2001;
+Pineda et al., 2009). At a regional scale (i.e., 10-1000 km), changes in
+geomorphology and coastal oceanographic regimes affect the advective
+loss of larvae from settlement areas and, consequently, the recruitment
+success of many species (Morgan et al., 2000; Lagos et al., 2008; Ebert,
+2010). At smaller scales (0.1-10 km), local factors can strongly affect
+nearshore larval distributions (Tapia and Pineda, 2007; Shanks and
+Shearman, 2009), patterns of settlement (Pineda, 1994; Ladah et al.,
+2005), or early mortality of benthic individuals (Hunt and Scheibling,
+1997).
+
+In Chile, one of the most important and commercially exploited benthic
+species is the surf clam \emph{Mesodesma donacium}. This species
+inhabits sandy beaches along the Chilean coast, from Arica to southern
+Chiloé (18-43ºS). It forms dense aggregations that are associated with
+morpho-dynamic beach features such as grain-size distribution,
+steepness, and profile (Jaramillo et al., 1994). The landing records for
+\emph{M. donacium} reveal boom and bust cycles, with significant spatial
+and temporal fluctuations in landings, which have been described as
+serial depletion in the populations distributed along the Chilean coast
+(Thiel et al., 2007). Initially, in the 1960s and 1970s, harvesting for
+this species was concentrated mainly in the northern region (Matamala et
+al., 2008), particularly in the sandy banks of Coquimbo. During the late
+1980s, banks in the southern zone near Mehuin were under significant
+extraction pressure. The fishery practically disappeared in the
+mid-1990s and started again in 1998 with the simultaneous harvesting of
+10 banks in the southern Los Lagos Region (Rubilar et al., 2001; Stotz
+et al., 2003). The high variability observed in the harvesting of surf
+clam has been attributed to ENSO effects on their survival and
+reproductive biology (Arntz et al., 1987; Riascos et al., 2009;
+Carstensen et al., 2010; Ibarcena Fernández et al., 2019). Nevertheless,
+recruitment variability could be caused by density-dependent effects
+(Lima et al., 2000), and is probably associated with adult life span
+(Ripley and Caswell, 2006).
+
+In recent years, the fishery for the surf clam \emph{M. donacium} has
+focused on three main sections of the Chilean coast: a) Coquimbo Region
+(29-30ºS), with high inter-annual variability in landings, which are
+concentrated at two main coves (Los Choros and Peñuelas, Fig. 1); b)
+``Caleta Quidico'' in the Biobío Region (38ºS), where most of the
+national landings were concentrated between 2001 and 2004, with a rapid
+depletion of the bank after that; and, c) Los Lagos Region (42-43ºS),
+with three main coves (Maullín, Mar Brava, and Cucao) accounting for
+landings that increased substantially in 2009-2011, and then dropped to
+reach a minimum in 2016 (Fig. 1).
+
+In Chile, benthic fisheries are managed through an administrative system
+known as ``Areas for the Management and Exploitation of Benthic
+Resources'' (AMEBR) which is based on a Territorial User Rights for
+Fisheries (TURF) system, in which a geographical coastal area is
+allocated to artisanal-fisher organizations through temporary rights to
+harvest benthic species. Fishers must provide baseline information and a
+managing plan for target benthic species, derived from field surveys,
+which are often conducted by private consultants. Based on these
+surveys, the management agency (Undersecretariat of Fisheries and
+Aquaculture, SUBPESCA) authorizes to harvest a given quota for the
+target species, seeking to safeguard the ecosystem's natural recovery
+(González et al., 2006; Gelcich et al., 2010; Marín and Gelcich, 2012;
+Aburto et al., 2013).
+
+In the AMEBR system, the management procedure (MP) consists of a) an
+annual assessment of the standing stock, which provides estimates of
+biomass and length-composition; b) estimation of a target fishing
+mortality, usually the F0.1 (Deriso, 1987) by assuming a pseudo-cohort
+and applying the yield-per-recruit model of Thompson and Bell (e.g.,
+Doubleday and Esunge, 2011; Mildenberger et al., 2017); and c)
+estimation of a total allowable catch (TAC), which must be authorized to
+be harvested by SUBPESCA. This MP repeats annually without taking into
+account past surveys and removals and would be inadequate to ensure the
+sustainable exploitation of benthic species with non-annual recruitment,
+such as the surf clam \emph{M. donacium}.
+
+Unfortunately, one crucial weakness of the surf clam fishery in Chile is
+the incomplete recording of landings at coves and landing ports.
+Additionally, there is a lack of management plans that simultaneously
+consider the impact of users and environmental variability on the target
+species' availability, which increases the cost of maintaining
+monitoring programs (CCT-B, 2014). Often, these fisheries are data-poor,
+which makes it challenging to apply quantitative methods of population
+assessment, such as integrated statistical catch-at-length (age)
+analysis (Smith et al., 2009; Punt et al., 2011). Thus, the local
+depletion of surf clam populations observed along the Chilean coast over
+the past decades has not been adequately evaluated yet due to a lack of
+data, which has hampered attempts to test whether local depletion was
+due to fishing effects or larger-scale, oceanographically driven changes
+in population dynamics.
+
+At Cucao beach in northern Patagonia, data from direct stock assessments
+of surf clam are available annually for the seven years 2011-2017.
+During this period, different consultants conducted surveys and produced
+estimates of abundance and annual quotas under the assumption that this
+species recruits annually. Decisions on harvest limits for this area
+were taken considering those annual quota estimates. In this study, we
+use the 7-year data set from stock assessment surveys to implement an
+operating model for the population dynamics of Mesodesma donacium at
+Cucao beach. The implemented model allows for inter-annual variability
+in recruitment to be simulated, to assess the management procedure
+currently applied to AMEBRs, and to provide estimates of harvest rates
+that could achieve sustainable exploitation given the high temporal
+variability in recruitment detected for this fishery in the recent past.
+
+\FloatBarrier
+
+\hypertarget{materials-and-methods}{%
+\section{Materials and methods}\label{materials-and-methods}}
+
+\hypertarget{study-area-and-data-sources}{%
+\subsection{Study area and data
+sources}\label{study-area-and-data-sources}}
+
+The study area is Cucao beach (24º36'S-74º08'W), located on the western
+shore of Chiloé island, northern Chilean Patagonia (Fig. 1). Over the
+past decade, Cucao has been one of the main harvesting areas for the
+surf clam \emph{M. donacium}, with three organizations of artisanal
+fishers having territorial use rights since 2015 (Fig. 1). The data were
+obtained from six stock assessment surveys carried out between 2011 and
+2017 (Table 1). Before 2015, the stock assessments of surf clam were
+carried out to establish annual catch quotas. Since 2015, data from the
+assessments became input information for harvesting surf clam under the
+AMEBR management procedure.
+
+\hypertarget{evaluation-of-the-management-procedure}{%
+\subsection{Evaluation of the management
+procedure}\label{evaluation-of-the-management-procedure}}
+
+A simulation was implemented to evaluate the performance of the
+management procedure (MP) for \emph{M. donacium} in Cucao. The
+simulation involved the steps of the Management Strategy Evaluation
+(MSE) framework (Starr et al., 1997; Cochrane et al., 1998; Punt et al.,
+2016; Kell et al., 2017). In this framework, one of the steps is
+conditioning an Operating Model (OM) based on data and knowledge for the
+surf clam population dynamics. The OM allowed us to evaluate the MP
+under uncertainty (Fig. 2), especially in terms of recruitment, which
+during the studied period exhibited pulses of high recruitment followed
+by years of low to nil recruitment. The OM allowed simulating the
+perceived vulnerable biomass in the stock assessment surveys for a
+window of 20 years into the future, along with the quota and the
+realized total harvest under a constant harvest rate strategy.
+
+The simulation modeling to evaluate the MP for surf clam consisted of
+the steps described in the following sections: Section A describes the
+current MP for surf clam in Cucao. Section B describes the OM that
+specifies the true structure and processes modulating the surf clam
+population dynamics, with emphasis on conditioning the OM to the
+available data and knowledge (Kell et al., 2017). Section C describes
+the phase of projecting the operating model 20 years into the future.
+For each year, the OM provides a population that can be sampled in a way
+similar to the stock assessment surveys carried out in the field. The
+projected OM included the recruitment dynamics and its response to
+fishing and environmental forcing. Section D describes the statistics
+used to summarize the performance of the current and alternative
+management procedures for surf clam in Cucao.
+
+\hypertarget{section-a-the-management-procedure-for-surf-clam}{%
+\subsection{Section A: The management procedure for surf
+clam}\label{section-a-the-management-procedure-for-surf-clam}}
+
+The management procedure corresponding to the Cucao AMEBR is shown in
+Figure 3. A team of technicians and professional divers carry out a
+stock assessment survey annually (see Table 1). The survey is designed
+to provide estimates of total abundance and biomass in the surveyed
+area. The estimate of biomass is size-structured, allowing the
+estimation of vulnerable biomass, which is defined by surf clams larger
+than 50 mm length (i.e., the minimum legal size). The stock assessment
+team computes yield per recruit using a Thomson and Bell model, and then
+\(F_{0.1}\) (Deriso, 1987) to compute the quota to be harvested.
+Nevertheless, in practical terms, the harvest decision has resulted in a
+constant Quota/Vulnerable biomass ratio of approximately 25\% (Table 1).
+Thus, the current management procedure can be simplified by formulating
+the following empirical harvest control rule:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  \(Q_i=0.25 V_i\)
+\end{enumerate}
+
+where \(V_i\) is the survey estimate for vulnerable biomass in the i-th
+year and \(Q_i\) is the quota of surf clam requested by the fishers
+organizations to the centralized management agency, i.e., the
+Undersecretariat of Fisheries and Aquaculture (SUBPESCA), which reviews
+the technical reports and approves the harvest quotas. The management
+procedure is essentially empirical since it uses the vulnerable biomass
+estimated in the survey as an indicator of the surf clam status, and the
+primary input to the harvest control rule (Table 1). Once SUBPESCA
+approves the quota, fishers can harvest the surf clam from the
+management area. At the time of harvest, catches are monitored and
+logged by the Chilean National Fisheries Service (SERNAPESCA).
+
+\hypertarget{section-b-the-operating-model}{%
+\subsection{Section B: The operating
+model}\label{section-b-the-operating-model}}
+
+The operating model (OM) was conditioned to know life-history parameters
+of surf clam and total biomass and population size-structure data
+obtained from the direct stock-assessment surveys (Table 1 and Table 2).
+The OM was based on an integrative size-structured stock assessment
+model (Sullivan et al., 1990; Punt et al., 2013), expressed by
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \(N_{i,l}=G_{l,l'} N_{i-1,l} e^{-Z_{i-1,l} }+ r_l R_i\)
+\end{enumerate}
+
+where \(N_{i,l}\) is the abundance of length-class \(l\) at the
+beginning of year \(i\), \(Z\) is the instantaneous total mortality
+rate, i.e., \(Z=F+M\), where \(F\) is the fishing mortality, and M is
+the natural mortality rate (set equal to 0.3). \(R_i\) is recruitment,
+\(r_l\) is the distribution of recruitment by length-classes, and
+\(G_{l,l'}\) is a growth transition matrix described by
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \(G_{l,l'}=\int_l^{l'} (l'-l)^{\alpha_j} e^{-(l'-l)/\beta_p } dl/\beta_p\)
+\end{enumerate}
+
+where \(l\) is the length class, and \(\alpha_j\) and \(\beta_p\) are
+parameters describing a gamma probability function. Recruitment was
+estimated according to:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  \(R_i = \bar{R}e^{\epsilon_i}\)
+\end{enumerate}
+
+where \(\bar{R}\) is the average recruitment and \(\epsilon_i\) is the
+annual deviation, which followed a normal distribution
+\(N(0,\sigma_R)\).
+
+The recruitment probability at length was assumed to be normal, i.e.,
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  \(r_l=\int_l^{l+1}\frac{1}{\sqrt{2\pi\sigma^2}} e^{(-(l-l_r)^2/2\sigma^2)}dl\)
+\end{enumerate}
+
+where \(l_r\) is the mean length at recruitment and \(\sigma^2\) is the
+variance of length at recruitment.
+
+The fishing mortality rate during the year \(i\) and length \(l\)
+\((F_{i,l})\) was computed by
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  \(F_{i,l} = F_i s_l\)
+\end{enumerate}
+
+where \(F_i\) is the annual fishing mortality rate, and \(s_l\) is the
+selectivity at length \(l\), which was defined by
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  \(s_l =0 \text{   if   } l < 50 \text{;  or   } s_l = 1 \text{     if      } l \geqslant 50\)
+\end{enumerate}
+
+The selectivity in Eq. 7 is a `knife-edge' function of minimum legal
+size (\(lc=50\) mm.
+
+The model for observations consisted of the total annual harvest and
+total biomass in the surveys. Catch by number was estimated according to
+the Baranov catch equation, i.e.,
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  \(C_{i,l}=F_{i,l} N_l (1-e^{-Z_{i,l}})/Z_{i,l}\)
+\end{enumerate}
+
+where \(C_{i,l}\) is the catch in the year \(i\) at length class \(l\).
+The total annual harvest (\(Y_i\)) was estimated by:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  \(Y_i=\sum_l W_l C_{i,l}\)
+\end{enumerate}
+
+where \(W_l\) is the average weight at length class \(l\).
+
+Length composition in the population was estimated by:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{9}
+\tightlist
+\item
+  \(p_{i,l}=N_{i,l}/(\sum_l N_{i,l})\)
+\end{enumerate}
+
+The population biomass at the time of the survey (within the year) was
+computed by:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  \(B_i=\psi \sum_l v_l W_l N_{i,l} e^{-\tau Z_{i,l}}\)
+\end{enumerate}
+
+where \(\psi\) is the catchability coefficient and assumed to be equal
+to 0.99, \(v_l\) is the selectivity at length of the survey and assumed
+to be constant and equal to 1 for all length classes, and \(\tau\) is
+the time of year in which the stock assessment survey was carried out.
+After that, the vulnerable biomass in the direct stock assessment
+surveys (\(V_i\)) was simulated according to:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{11}
+\tightlist
+\item
+  \(V_i = \psi \sum_l v_l W_l N_{i,l} e^{-\tau Z_{i,l}}\)
+\end{enumerate}
+
+Total biomass was computed as the sum of products between the abundance
+and the average weight at length, and the spawning biomass was computed
+by:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{12}
+\tightlist
+\item
+  \(S_i=\sum_l m_l W_l N_l e^{-T_s Z_{i,l}}\)
+\end{enumerate}
+
+where \(m_l\) is the female maturity ogive, \(T_s\) is the beginning of
+the spawning time within a year (set at 0.81). The model was conditioned
+to the available data and known surf clam life-history parameters and
+consisted of estimating the unknown parameters by fitting the population
+dynamics to the data. The objective function consisted of negative
+log-likelihood functions and penalized priors (Table 2 and Table 3). The
+model was conditioned through an estimation procedure implemented in
+ADMB (Fournier et al., 2012).
+
+\hypertarget{section-c-simulation-of-the-management-procedure}{%
+\subsection{Section C: Simulation of the management
+procedure}\label{section-c-simulation-of-the-management-procedure}}
+
+Once the OM was conditioned to the data and known life history
+parameters, a forward projection phase of the population dynamics
+allowed simulating the management procedure over 20 years. The
+recruitment dynamics followed a Beverton and Holt stock-recruitment
+relationship (SRR), described by:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{13}
+\tightlist
+\item
+  \(R_i=\frac{4 h R_0 S_{i-1}}{(1-h) S_0+(5h-1) S_{i-1}} e^{\epsilon_i - 0.5\sigma_R^2}\)
+\end{enumerate}
+
+where \(R_0\) is the average unexploited recruitment, assumed to be
+equal to the average recruitment in the period 2011-2017 (i.e.,
+\(R_0=\bar{R}\)), \(S_0\) is the average unexploited spawning biomass
+that produces \(R_0\), and \(h\) is the steepness (Francis, 1992; Dorn,
+2012; Lee et al., 2012), which was set equal to 0.7 considering
+estimates for the surf clam \emph{Spisula solidissima} (Powell et al.,
+2015; Hennen et al., 2018). In Eq. 14, recruitment is a function of both
+the spawning biomass and the environmental forcing, which is considered
+in the simulation by allowing \(\epsilon_i\) to vary as a sequence of
+switches in the operating model, i.e.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{14}
+\tightlist
+\item
+  \(\epsilon_i=E_i e^{(\delta_i)}\)
+\end{enumerate}
+
+where \(E_i\) is the environmental forcing represented as a sequence of
+switches that are alternating between two-year periods in which
+recruitment is favored (\(E_i = 1\)) followed by two-year periods in
+which recruitment is not favored (\(E_i = -1\)). The sequence of
+switches was perturbed by stochastic annual deviations (\(\delta i\))
+following a normal distribution, i.e., \(N(0,\sigma_R)\). Equation 15
+allowed the simulation of future recruitment as a pattern similar to the
+changes observed in the recruitment estimates obtained from the stock
+assessments of 2011-2017.
+
+The management procedure considered the current harvest rate of 25\%,
+but for comparison purposes, alternative values of 0, 10, 15, 20, and
+30\% were also considered. The exploitation rate \(\mu=0\) was
+implemented to simulate the unexploited surf clam population as a
+reference. The simulation was performed under uncertainty, sampling from
+the posterior of the fitted model through Markov Chain Monte Carlo
+(MCMC). The number of MCMC was obtained from 10,000 samples and saving
+every 200 by using the metropolis algorithm implemented in ADMB
+(Fournier et al., 2012).
+
+\hypertarget{section-d-performance-evaluation}{%
+\subsection{Section D: Performance
+evaluation}\label{section-d-performance-evaluation}}
+
+The trajectory of simulated recruitment, spawning biomass, and fishing
+mortality resulting from the MP was summarized with confidence intervals
+of 90\% by applying a percentile method to all realizations obtained by
+MCMC. Depletion was computed as the ratio between the spawning biomass
+in a given year and the average unexploited spawning biomass. Also, a
+reduction of 40\% in the spawning biomass from the average unexploited
+value was considered as a target reference point, i.e.,
+\(S_{\text{target}} = 0.4S0\). Therefore, exploitation rates generating
+reductions below the target were considered unsustainable for the surf
+clam population. The probability of keeping the target was computed as
+\(Pr[S_i⁄S_{\text{target}} > 1]\), whereas the probability of a collapse
+was computed as \(Pr[S_i⁄S_{\text{target}} \leq 0.5]\). Exploitation
+rates generating probabilities of achieving the target above 0.5 were
+used as a reference for good performance.
+
+\FloatBarrier
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\hypertarget{surf-clam-population-at-cucao-beach-and-the-operating-model}{%
+\subsection{Surf clam population at Cucao beach and the operating
+model}\label{surf-clam-population-at-cucao-beach-and-the-operating-model}}
+
+In the period 2011 -- 2017, the total abundance of surf clam fluctuated
+between 68 and 385 million individuals, with a mean of 174.2 million.
+Total biomass ranged between 1356 and 5407 t, with a mean of 2,994 t,
+whereas the vulnerable biomass fluctuated between 1261 and 5399 t, with
+a mean of 2716 t (Table 1).
+
+The operating model (OM) performed well in terms of reproducing the
+observed changes in surf clam length composition (Fig. 4). The observed
+length composition showed clear modal progression for sizes \(>50\) mm,
+which was also shown by the fitted model (Fig. 4). According to the OM,
+the mean length at recruitment (\(l_r\)) was 8.8 mm (Table 2, last
+column), with specimens \(<25\) mm recruiting in 2013, 2014, and 2017
+(Fig. 4). This finding provides evidence that the recruitment process in
+the surf clam population of Cucao does not occur on an annual basis, but
+rather with pulses of high recruitment to the population followed by
+periods of lower or no recruitment, approximately every \(2-3\) years.
+
+The population biomass showed a declining trend from 2011 to 2017 (Fig.
+5A), tracking the observed total and vulnerable biomass in the surveys.
+The vulnerable biomass was similar to total biomass, but the spawning
+biomass was lower due to the maturity ogive and mortality prior to
+spawning within the year. The average unexploited spawning biomass
+(\(S_0\)) was estimated at 1,343 t, which was lower than the spawning
+biomass estimated for the period 2011-2017. Hence, the target spawning
+biomass for management purposes was estimated at 537 t. Recruitment was
+higher in 2011-2017, with above-average values in 2013 and 2014,
+followed by lower recruitment from 2015 to 2017 (Fig. 5B). The fishing
+mortality rate fluctuated as the harvest but was higher in 2017 (Fig.
+5C).
+
+\hypertarget{recruitment-simulations-and-the-performance-of-the-management-procedure}{%
+\subsection{Recruitment simulations and the performance of the
+management
+procedure}\label{recruitment-simulations-and-the-performance-of-the-management-procedure}}
+
+According to some realizations of the OM simulations, recruitment showed
+the alternating pattern between higher and lower recruitment (Fig. 6).
+However, that characteristic in recruitment was obscured in the total
+number of simulations, within the confidence limits of 90\% (Fig. 7A).
+
+The spawning biomass responded to each exploitation rate (Fig. 7B), as
+reflected by the approximately constant fishing mortality (Fig. 7C). The
+effective catch was assumed to be identical to the quota due to rigorous
+control of the harvest. Note that an exploitation rate of 30\% produces
+the highest average fishing mortality, and close to that estimated in
+2017 (Fig. 7C).
+
+The current exploitation rate of 25\% produced nearly 20\% depletion in
+the spawning biomass (Fig. 8), with a probability of future collapse
+\textgreater{} 80\% (Fig. 9). On the other hand, an exploitation rate of
+15\% kept the spawning biomass close to the target, i.e., 40\% of the
+unexploited spawning biomass (Fig. 8), with probabilities \(>50\)\% once
+recovered the biomass (Fig. 9). Indeed, an exploitation rate of 15\% was
+able to revert the declining trend observed in the surf clam spawning
+biomass (Fig. 8).
+
+\FloatBarrier
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+Recruitment of benthic marine invertebrates is a highly complex process
+that spans a range of spatio-temporal scales (Defeo, 1996; Pineda and
+Caswell, 1997) and that is modulated by environmental forcing (e.g.,
+winds, waves, physiological stress) that limits larval survival and
+successful settlement (Pineda, 1991; Cushing, 1995). Additionally,
+density-dependent factors operating at different spatial scales are
+prevalent in marine invertebrates (Hixon et al., 2012), leading to
+reduced reproductive success and survival of adults (Stephens, 1999).
+Adult density can positively or negatively affect recruitment success,
+which then determines adult density patterns (Jenkins et al., 2009).
+Both factors (i.e., environment and density-dependence) are not mutually
+exclusive, but interact to determine the densities of marine benthic
+populations and assemblages.
+
+The recruitment estimates for the surf clam \emph{M. donacium} in the
+period 2011-2017, and that conditioned the operating model (OM), showed
+the alternation of periods with high and low recruitment in the Cucao
+beach population, despite the short data series available. Two years
+with high recruitment were followed by poor recruitment in 2016, after a
+warm ENSO event in 2015-2016 (Jacox et al., 2016; Martínez et al.,
+2017).
+
+Recruitment failures and high temporal variability are common features
+in the population dynamics of surf clams (Lima et al., 2000; Ripley and
+Caswell, 2006; Aburto et al., 2013). These are general features in the
+population dynamics of many species with short life cycles and can be
+linked to high rates of natural mortality and greater variability in
+growth rates (Bjørkvoll et al., 2012). These generalizations
+notwithstanding, the estimated lifespan of the surf clam \emph{M.
+donacium} at Cucao was close to 7 years, with cohorts showing a modal
+progression in the size structure from 2011 to 2017. The estimated von
+Bertalanffy growth parameter (\(K=0.21\) year\(^{-1}\)) indicates
+theoretical longevity close to 15 years, i.e., \(t_{max} \sim 3/K\)
+(Kenchington, 2014). Thus, the population's age-structure may act as a
+filter of recruitment variability, dampening the effects of
+environmental variability on population renewal, and hence reducing the
+influence of the environment on the stock (Planque et al., 2010).
+
+Recruitment in \emph{M. donacium} is hard to miss during the stock
+assessment surveys since post-settled individuals are easily
+distinguishable in the field and tend to accumulate in the swash zone
+and near the mouth of estuaries or small rivers (Jaramillo et al.,
+1994). Thus, as has been demonstrated in this study, the recruitment of
+surf clams at Cucao beach does not always contribute noticeably to the
+exploited stock biomass. Thus, settlement numbers or post-settlement
+mortality, or both, may vary widely from year to year, which suggests
+that environmental phenomena connected with the dispersal of larvae or
+the physiology of post-settled individuals may condition the stock's
+renewal. Although the information collected to date limits the
+inferences that can be made about environmental phenomena that may limit
+recruitment success in the surf clam \emph{M. donacium}, it is likely
+that a specific combination of wave and wind conditions, at the right
+time of year, is required for competent larvae to reach the shore and
+settle. The total number of competent larvae that could reach the shore,
+in turn, is likely to depend on advective and feeding conditions in
+shelf waters during the weeks or months before the recruitment period.
+
+It has been documented that environmental variability affects the
+abundance of \emph{M. donacium} further north. For example, during the
+1997-1998 El Niño, the collapse of the surf clam populations in Arica
+(18º30'S) and Huasco (28º30'S) was attributed to this phenomenon, in
+connection with coastal flooding and excess rainfall (Jerez et al.,
+1999). In Peru, high mortality of adult \emph{M. donacium} was
+attributed to the increase in temperatures caused by the 1982-1983 El
+Niño (Arntz et al., 1987, 1988). Infrequent recruitment of surf clams
+has also been reported previously in northern Chile, possibly in
+association with environmental factors that affect the release of
+gametes as well as oceanographic factors affecting the survival and
+onshore supply of planktonic larvae (Thiel et al., 2007). It is common
+to hear artisanal fishers talk about a ``green'' surf clam with lengths
+of \(3-4\) cm that is occasionally found in the exploited banks. This is
+consistent with the occasional appearance of juveniles in the annual
+surveys at Cucao beach, where small individuals (lengths \(2.5-5.0\) cm)
+appeared in large numbers in only one out of seven stock-assessment
+surveys (2016). The inconsistent occurrence of juveniles observed in the
+stock-assessment surveys was not an artifact of survey mistiming
+(relative to recruitment), as indicated by the inter-annual consistency
+and progression of gaps in the size-structure data collected during
+surveys.
+
+For fisheries management, the observed recruitment failures imply that,
+if recruitment occurs approximately once every three years, the
+exploitation rates should be lower than those recommended by the current
+management procedure (\(\mu= 25\)\%), and that lower exploitation rates
+(\(µ \leq 15\)\%) are needed to ensure sustainable exploitation in the
+medium term. Furthermore, the current lack of knowledge on the
+spatial-temporal variability of settlement and recruitment in species
+such as the surf clam \emph{M. donacium} puts into question the
+exploitation strategies that are currently considered as sustainable.
+Typically, it is assumed that benthic species have annual recruitment,
+which is not the case for \emph{M. donacium}. Therefore, this
+contribution highlights an issue that warrants an even more
+precautionary approach to the commercial exploitation of benthic species
+with non-annual, or irregular recruitment.
+
+A management procedure can be viewed as a ``static'' or memory-lacking
+process since it does not refer to either past or future observations.
+Indeed, annual quotas are computed from the standing stock assessed
+directly in the field. The size-structure data are converted into age
+composition data through the slicing age-class method, which is the
+primary input for the yield-per-recruit model of Thompson and Bell. This
+model assumes that age-classes are treated as a ``pseudo-cohorts''
+without considering past recruitment to explain the current length- or
+age-composition. Also, the estimation of \(F_{0.1}\) has an implicit
+economic objective because it is computed from the yield-per-recruit
+curve, but \(F_{0.1}\) is implicitly a function of age at first catch
+and, hence, knife-edge selectivity (Deriso, 1987; Quinn and Deriso,
+1999), which is probably adequate for the surf clam population.
+
+Nevertheless, although \(F_{0.1}\) is more conservative than
+\(F_{max}\), it is questionable considering the spawning potential ratio
+(Shepherd, 1982; Sissenwine and Shepherd, 1987). Indeed, the realized
+harvest rate associated to \(F_{0.1}\) was close to 25\% in the
+management procedure and resulted in being excessive according to the
+surf clam population dynamics here used as an operating model. It is
+advisable to apply a harvest rate of 15\%, which may be enough to keep
+the reproductive potential of the surf clam population. Furthermore, it
+is advisable to implement a harvest control rule in which the harvest
+rate declines when the spawning stock declines due to lower recruitment.
+The ramp-like harvest control rule could be more effective for a rapid
+recovery of the spawning biomass, dampening the probability of
+unobserved or lower recruitments in the future. Reducing exploitation as
+the stock declines results in added resilience against environmental
+variability and, eventually, climate change (e.g., Merino et al., 2017).
+
+In general, the above described ``static'' or ``memory-lacking''
+procedure management is applied to almost all of the management areas
+(AMEBR) in Chile, as documented in the management and exploitation plan
+for each target species (Gallardo et al., 2011). Our analyses revealed
+that surf clam recruitment does not occur annually, or even
+periodically, with a separation of 3 or more years between high
+recruitment episodes. The landing records from other areas where surf
+clam populations were depleted in previous decades show that
+exploitation could be unsustainable when the harvest rate intensity is
+not controlled. This behavior is typical in the exploitation of surf
+clam \emph{M. donacium} along the Chilean coast (e.g., Aburto and Stotz,
+2013), as well as for other surf clam species (Weinberg, 1999; Laudien
+et al., 2003; Fiori and Morsán, 2004; Ripley and Caswell, 2006; Herrmann
+et al., 2011).
+
+The underlying problem is that, in practice, little is known about the
+intensity and success of recruitment in harvested marine populations,
+which can be attributed to biases introduced by the extractive activity
+itself (e.g., Punt and Cope, 2019). Sampling from the commercial catch
+is usually carried out on landings, which leaves out juvenile fractions.
+In the case of benthic species harvested from AMEBRs (Chile), population
+surveys usually consider the fraction that can be detected visually by
+scientific divers. Although this procedure includes individuals under
+commercial size, it is likely to leave out newly settled individuals,
+which are not always visible due to small size, pigmentation, or
+behavior. Thus, the quantification of newly established fractions in
+populations of commercial species usually is fraught with uncertainty
+and should be approached through indirect methods. For management areas
+where biomass and length-composition have been recorded annually over a
+long-enough period, it is advisable to implement an integrated
+stock-assessment model (Smith et al., 2009; Punt et al., 2011).
+Subsequently, biological reference points should be established as a
+means to assess the population's status, and to set a TAC based on
+population projections. Thereafter, the AMEBR's management procedure
+must be changed to keep the exploitation of benthic species within
+biologically safe margins.
+
+\hypertarget{acknowledgements}{%
+\section{Acknowledgements}\label{acknowledgements}}
+
+Partial support for LC and FJT was provided by COPAS Sur-Austral
+(CONICYT PIA APOYO CCTE AFB170006). FJT also acknowledges partial
+support from INCAR (CONICYT FONDAP grant 15110027). All code used to
+generate this paper, as well as prior versions of this manuscript, are
+available at:
+\href{https://github.com/LuisACubillos/}{github.com/LuisACubillos/}.
+
+\FloatBarrier
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+Aburto, J., Gallardo, G., Stotz, W., Cerda, C., Mondaca-Schachermayer,
+C., and Vera, K. 2013. Territorial user rights for artisanal fisheries
+in Chile - intended and unintended outcomes. Ocean and Coastal
+Management, 71.
+
+Aburto, J., and Stotz, W. 2013. Learning about TURFs and natural
+variability: Failure of surf clam management in Chile. Ocean and Coastal
+Management, 71.
+
+Arntz, W. E., Brey, T., Tarazona, J., and Robles, A. 1987. Changes in
+the structure of a shallow sandy-beach community in Peru during an el
+niño event. South African Journal of Marine Science, 5: 645--658.
+
+Arntz, W. E., Valdivia, E., and Zeballos, J. 1988. Impact of El Nino
+1982-83 on the commercially exploited invertebrates (mariscos) of the
+Peruvian shore. Meeresforsch., 32: 3--22.
+
+Arntz, W. E., Gallardo, V. A., Gutiérrez, D., Isla, E., Levin, L. A.,
+Mendo, J., Neira, C., et al.~2006. El Niño and similar perturbation
+effects on the benthos of the Humboldt, California, and Benguela Current
+upwelling ecosystems.
+
+Berkes, F. 2003. Alternatives to conventional management: Lessons from
+small-scale fisheries. Environments, 31: 5--20.
+
+Bhaud, M. R. 1993. Relationship between larval type and geographic range
+in marine species: complementary observations on gastropods.
+Oceanologica Acta, 16: 191--198.
+
+Bjørkvoll, E., Grøtan, V., Aanes, S., Sæther, B. E., Engen, S., and
+Aanes, R. 2012. Stochastic population dynamics and life-history
+variation in marine fish species. American Naturalist, 180: 372--387.
+
+Botsford, L. W. 2001. Physical influences on recruitment to California
+current invertebrate populations on multiple scales. In ICES Journal of
+Marine Science, pp.~1081--1091.
+
+Carstensen, D., Riascos, J. M., Heilmayer, O., Arntz, W. E., and
+Laudien, J. 2010. Recurrent, thermally-induced shifts in species
+distribution range in the Humboldt current upwelling system. Marine
+Environmental Research, 70: 293--299. Elsevier
+Ltd.~\url{http://dx.doi.org/10.1016/j.marenvres.2010.06.001}.
+
+CCT-B, C. C. T. B. 2014. Cuota recurso macha. 1--6 pp.
+
+Cochrane, K. L., Butterworth, D. S., De Oliveira, J. A. A., and Roel, B.
+A. 1998. Management procedures in a fishery based on highly variable
+stocks and with conflicting objectives: Experiences in the South African
+pelagic fishery. Reviews in Fish Biology and Fisheries, 8: 177--214.
+
+Cushing, D. H. 1995. Population Production and Regulation in the Sea: A
+Fisheries Perspective. Cambridge. 368 pp.
+
+Defeo, O. 1996. Recruitment variability in sandy beach macroinfauna:
+much to learn yet. Revista chilena de historia natural, 69: 615--630.
+
+Deriso, R. B. 1987. Optimal F0.1 criteria and their relationship to
+maximum sustainable yield. Canadian Journal of Fisheries and Aquatic
+Sciences, 44: 339--348.
+
+Dorn, M. W. 2012. North American Journal of Fisheries Management Advice
+on West Coast Rockfish Harvest Rates from Bayesian. North American
+Journal of Fisheries Management: 37--41.
+
+Doubleday, K. J., and Esunge, J. N. 2011. Application of Markov chains
+to stock trends. Journal of Mathematics and Statistics, 7: 103--106.
+
+Ebert, T. A. 2010. Demographic patterns of the purple sea urchin
+Strongylocentrotus purpuratus along a latitudinal gradient, 1985-1987.
+Marine Ecology Progress Series, 406: 105--120.
+
+Fiori, S. M., and Morsán, E. M. 2004. Age and individual growth of
+Mesodesma mactroides (Bivalvia) in the southernmost range of its
+distribution. ICES Journal of Marine Science, 61: 1253--1259.
+
+Fournier, D. A., Skaug, H. J., Ancheta, J., Ianelli, J., Magnusson, A.,
+Maunder, M. N., Nielsen, A., et al.~2012. AD Model Builder: Using
+automatic differentiation for statistical inference of highly
+parameterized complex nonlinear models. Optimization Methods and
+Software, 27: 233--249.
+
+Francis, R. I. C. C. 1992. Use of risk analysis to assess fishery
+management strategies: a case study using orange roughy (Hoplostethus
+atlanticus) on the Chatham Rise, New Zealand. Canadian Journal of
+Fisheries and Aquatic Sciences, 49: 922--930.
+
+Gallardo, G. L., Stotz, W., Aburto, J., Mondaca, C., and Vera, K. 2011.
+Emerging commons within artisanal fisheries. The Chilean territorial use
+rights in fisheries (TURFs) within a broader coastal landscape.
+International Journal of the Commons, 5: 459--484.
+
+Gelcich, S., Hughes, T. P., Olsson, P., Folke, C., Defeo, O., Fernández,
+M., Foale, S., et al.~2010. Navigating transformations in governance of
+Chilean marine coastal resources. Proceedings of the National Academy of
+Sciences of the United States of America, 107: 16794--16799.
+
+Giangrande, A., Geraci, S., and Belmonte, G. 1994. Life-cycle and
+life-history diversity in marine invertebrates and the implications in
+community dynamics. Oceanography and marine biology: an annual review.
+Vol. 32, 32: 305--333.
+
+González, J., Stotz, W., Garrido, J., Orensanz, J. M., Parma, A. M.,
+Tapia, C., and Zuleta, A. 2006. The Chilean turf system: How is it
+performing in the case of the loco fishery? Bulletin of Marine Science,
+78: 499--527.
+
+Grantham, B. A., Eckert, G. L., and Shanks, A. L. 2003. Dispersal
+potential of marine invertebrates in diverse habitats. Ecological
+Applications, Supplement: S108--S116.
+
+Hennen, D. R., Mann, R., Munroe, D. M., and Powell, E. N. 2018.
+Biological reference points for Atlantic surfclam (Spisula solidissima)
+in warming seas. Fisheries Research, 207: 126--139. Elsevier.
+\url{https://doi.org/10.1016/j.fishres.2018.06.013}.
+
+Herrmann, M., Alfaya, J. E. F., Lepore, M. L., Penchaszadeh, P. E., and
+Arntz, W. E. 2011. Population structure, growth and production of the
+yellow clam Mesodesma mactroides (Bivalvia: Mesodesmatidae) from a
+high-energy, temperate beach in northern Argentina. Helgoland Marine
+Research, 65: 285--297.
+
+Hixon, M. A., Anderson, T. W., Buch, K. L., Johnson, D. W., Mcleod, J.
+B., and Stallings, C. D. 2012. Density dependence and population
+regulation in marine fish: A large-scale, long-term field manipulation.
+Ecological Monographs, 82: 467--489.
+
+Hunt, H. L., and Scheibling, R. E. 1997. Role of early post-settlement
+mortality in recruitment of benthic marine invertebrates. Marine Ecology
+Progress Series, 155: 269--301.
+
+Ibarcena Fernández, W., Muñante Angulo, L., Muñante Melgar, L., and
+Vasquez Flores, J. 2019. La explotación de la macha (Mesodesma donacium
+Lamarck 1818) en el litoral de Tacna. Ciencia \& Desarrollo: 12--22.
+
+Jacox, M. G., Hazen, E. L., Zaba, K. D., Rudnick, D. L., Edwards, C. A.,
+Moore, A. M., and Bograd, S. J. 2016. Impacts of the 2015--2016 El Niño
+on the California Current System: Early assessment and comparison to
+past events. Geophysical Research Letters, 43: 7072--7080.
+
+Jaramillo, E., Pino, M., Filun, L., and Gonzalez, M. 1994. Longshore
+distribution of Mesodesma donacium (Bivalvia: Mesodesmatidae) on a sandy
+beach of the south of Chile. The Veliger, 37: 192--200.
+
+Jenkins, S. R., Marshall, D., and Fraschetti, S. 2009. Settlement and
+Recruitment. In Marine Hard Bottom Communities Patterns, Dynamics,
+Diversity, and Change, pp.~177--190.
+\url{http://www.springerlink.com/index/10.1007/b76710}.
+
+Jerez, G., Ariz, L., Baros, V., Olguín, A., González, J., Oliva, J.,
+Ojeda, V., et al.~1999. Estudio biológico pesquero del recurso macha en
+la I y III Regiones. Informe Final FIP 97-33.
+
+Kell, L. T., Arrizabalaga, H., Merino, G., and De Bruyn, P. 2017.
+Conditioning an operating model for North Atlantic Albacore. Collect.
+Vol. Sci. Pap. ICCAT, 73: 1296--1327.
+
+Kenchington, T. J. 2014. Natural mortality estimators for
+information-limited fisheries. Fish and Fisheries, 15: 533--562.
+
+Ladah, L. B., Tapia, F. J., Pineda, J., and López, M. 2005. Spatially
+heterogeneous, synchronous settlement of Chthamalus spp. larvae in
+northern Baja California. Marine Ecology Progress Series, 302: 177--185.
+
+Lagos, N. A., Castilla, J. C., and Broitman, B. R. 2008. Spatial
+environmental correlates of intertidal recruitment: A test using
+barnacles in northern chile. Ecological Monographs, 78: 245--261.
+
+Laudien, J., Brey, T., and Arntz, W. E. 2003. Population structure,
+growth and production of the surf clam Donax serra (Bivalvia, Donacidae)
+on two Namibian sandy beaches. Estuarine, Coastal and Shelf Science, 58:
+105--115.
+
+Lee, H. H., Maunder, M. N., Piner, K. R., and Methot, R. D. 2012. Can
+steepness of the stock-recruitment relationship be estimated in fishery
+stock assessment models? Fisheries Research, 125--126: 254--261.
+Elsevier B.V. \url{http://dx.doi.org/10.1016/j.fishres.2012.03.001}.
+
+Lima, M., Brazeiro, A., and Defeo, O. 2000. Population dynamics of the
+yellow clam Mesodesma mactroides: Recruitment variability,
+density-dependence and stochastic processes. Marine Ecology Progress
+Series, 207: 97--108.
+
+Marín, A., and Gelcich, S. 2012. Gobernanza y capital social en el
+comanejo de recursos bentónicos en Chile: aportes del análisis de redes
+al estudio de la pesca artesanal de pequeña escala. Cultura - Hombre -
+Sociedad CUHSO, 22: 131--153.
+
+Martínez, R., Zambrano, E., Nieto, J. J., Hernández, J., and Costa, F.
+2017. Evolución, vulnerabilidad e impactos económicos y sociales de El
+Niño 2015-2016 en América Latina. Investigaciones Geográficas: 65--78.
+
+Matamala, M., Ther, F., Almanza, V., Bello, B., and Gutierrez, J. 2008.
+Bases biológicas para la administración del recurso macha en la X
+Región. Informe Final FIP 2006-26. 230 pp.
+
+Merino, G., Arrizabalaga, H., Santiago, J., and Sharma, R. 2017. Updated
+evaluation of harvest control rules for North Atlantic albacore through
+management strategy evaluation. Col. Vol. Sci. Pap. ICCAT, 74: 457--478.
+
+Mildenberger, T. K., Taylor, M. H., and Wolff, M. 2017. TropFishR: an R
+package for fisheries analysis with length-frequency data.
+
+Morgan, L. E., Botsford, L. W., Wing, S. R., and Smith, B. D. 2000.
+Spatial variability in growth and mortality of the red sea urchin,
+Strongylocentrotus franciscanus, in northern California. Canadian
+Journal of Fisheries and Aquatic Sciences, 57: 980--992.
+\url{http://www.nrcresearchpress.com/doi/abs/10.1139/f00-046}.
+
+O'Connor, M. I., Bruno, J. F., Gaines, S. D., Halpern, B. S., Lester, S.
+E., Kinlan, B. P., and Weiss, J. M. 2007. Temperature control of larval
+dispersal and the implications for marine ecology, evolution, and
+conservation. Proceedings of the National Academy of Sciences of the
+United States of America, 104: 1266--1271.
+
+Ospina-Alvarez, A., de Juan, S., Davis, K. J., González, C., Fernández,
+M., and Navarrete, S. 2020. Integration of biophysical connectivity in
+the spatial optimization of coastal ecosystem services. Science of The
+Total Environment: 139367. Elsevier B.V.
+\url{https://doi.org/10.1016/j.scitotenv.2020.139367}.
+
+Ouréns, R., Freire, J., Vilar, J. A., and Fernández, L. 2014. Influence
+of habitat and population density on recruitment and spatial dynamics of
+the sea urchin Paracentrotus lividus: Implications for harvest refugia.
+ICES Journal of Marine Science, 71: 1064--1072.
+
+Pineda, J. 1991. Predictable Upwelling and the Shoreward Transport of
+Planktonic Larvae by Internal Tidal Bores. Science, 253: 548--549.
+
+Pineda, J. 1994. Spatial and temporal patterns in barnacle settlement
+rate along a Southern California rocky shore. Marine Ecology Progress
+Series, 107: 125--138.
+
+Pineda, J., and Caswell, H. 1997. Dependence of settlement rate on
+suitable substrate area. Marine Biology, 129: 541--548.
+
+Pineda, J. 2000. Linking larval settlement to larval transport:
+assumptions, potentials and pitfalls. Oceanography of the Eastern
+Pacific: 84--105.
+
+Pineda, J., Reyns, N. B., and Starczak, V. R. 2009. Complexity and
+simplification in understanding recruitment in benthic populations.
+
+Planque, B., Fromentin, J. M., Cury, P., Drinkwater, K. F., Jennings,
+S., Perry, R. I., and Kifani, S. 2010. How does fishing alter marine
+populations and ecosystems sensitivity to climate? Elsevier B.V.
+\url{http://dx.doi.org/10.1016/j.jmarsys.2008.12.018}.
+
+Powell, E. N., Klinck, J. M., Munroe, D. M., Hofmann, E. E., Moreno, P.,
+and Mann, R. 2015. The value of captains' behavioral choices in the
+success of the surfclam (Spisula solidissima) fishery on the U.S.
+mid-atlantic coast: A model evaluation. Journal of Northwest Atlantic
+Fishery Science, 47: 1--27.
+
+Punt, A. E., Smith, D. C., and Smith, A. D. M. 2011. Among-stock
+comparisons for improving stock assessments of data-poor stocks: The
+`robin Hood' approach. ICES Journal of Marine Science, 68: 972--981.
+
+Punt, A. E., Huang, T., and Maunder, M. N. 2013. Review of integrated
+size-structured models for stock assessment of hard-to-age crustacean
+and mollusc species. ICES Journal of Marine Science, 70: 16--33.
+
+Punt, A. E., Butterworth, D. S., de Moor, C. L., De Oliveira, J. A. A.,
+and Haddon, M. 2016. Management strategy evaluation: Best practices.
+Fish and Fisheries, 17: 303--334.
+
+Punt, A. E., and Cope, J. M. 2019. Extending integrated stock assessment
+models to use non-depensatory three-parameter stock-recruitment
+relationships. Fisheries Research, 217: 46--57. Elsevier.
+\url{http://dx.doi.org/10.1016/j.fishres.2017.07.007}.
+
+Quinn, T. J., and Deriso, R. B. 1999. Quantitative Fish Dynamics. Oxford
+University Press. 560 pp.
+
+Riascos, J. M., Carstensen, D., Laudien, J., Arntz, W. E., Oliva, M. E.,
+Guntner, A., and Heilmayer, O. 2009. Thriving and declining: Climate
+variability shaping life-history and population persistence of Mesodesma
+donacium in the Humboldt Upwelling System. Marine Ecology Progress
+Series, 385: 151--163.
+
+Ripley, B. J., and Caswell, H. 2006. Recruitment variability and
+stochastic population growth of the soft-shell clam , Mya arenaria, 193:
+517--530.
+
+Rubilar, P., Ariz, L., Ojeda, V., Lozada, E., Campos, P., Jerez, G.,
+Osorio, C., et al.~2001. Estudio biológico pesquero del recurso macha en
+la X Región. Informe Final FIP 2000-17. 242 pp.
+
+Shanks, A. L., and Shearman, R. K. 2009. Paradigm lost? Cross-shelf
+distributions of intertidal invertebrate larvae are unaffected by
+upwelling or downwelling. Marine Ecology Progress Series, 385: 189--204.
+
+Shepherd, J. G. 1982. A Versatile New Stock-Recruitment Relationship for
+Fisheries, and the Construction of Sustainable Yield Curves. ICES
+Journal of Marine Science, 40: 67--75.
+
+Sissenwine, M. P., and Shepherd, J. G. 1987. An Alternative Perspective
+on Recruitment Overfishing and Biological Reference Points. Canadian
+Journal of Fisheries and Aquatic Sciences, 44: 913--918.
+
+Smith, D., Punt, A., Dowling, N., Smith, A., Tuck, G., and Knuckey, I.
+2009. Reconciling Approaches to the Assessment and Management of
+Data-Poor Species and Fisheries with Australia's Harvest Strategy
+Policy. Marine and Coastal Fisheries, 1: 244--254.
+
+Starr, P. J., Breen, P. A., Hilborn, R. H., and Kendrick, T. H. 1997.
+Evaluation of a management decision rule for a New Zealand rock lobster
+substock. In Marine and Freshwater Research, pp.~1093--1101.
+
+Stephens, P. A. . S. W. J. . F. R. P. 1999. What is the Allee effect?
+Oikos, 87: 185--190.
+
+Stotz, W., Lancellotti, D. A., Lohrmann, K., von Brand, E., Aburto, J.,
+Caillaux, L. M., Valdebenito, M., et al.~2003. Repoblamiento de bancos
+de macha en playa `Las machas' de Arica, I Región. Informe Final FIP
+2001-24. 207 pp.
+
+Sullivan, P. J., Han-Lin Lai, and Gallucci, V. F. 1990. A
+catch-at-length analysis that incorporates a stochastic model of growth.
+Canadian Journal of Fisheries and Aquatic Sciences, 47: 184--198.
+
+Tapia, F. J., and Pineda, J. 2007. Stage-specific distribution of
+barnacle larvae in nearshore waters: Potential for limited dispersal and
+high mortality rates. Marine Ecology Progress Series, 342: 177--190.
+
+Thiel, M., Macaya, E. C., Acuña, E., Arntz, W. E., Bastias, H.,
+Brokordt, K., Camus, P. A., et al.~2007. The Humboldt Current System of
+northern and central Chile. Oceanography and Marine Biology Vol 45, 45:
+195--344. \url{http://www.vliz.be/vmdcdata/Imis2/ref.php?refid=111470}.
+
+Weinberg, J. R. 1999. Age-structure, recruitment, and adult mortality in
+populations of the Atlantic surfclam, Spisula solidissima, from 1978 to
+1997. Marine Biology, 134: 113--125.
+
+\end{document}

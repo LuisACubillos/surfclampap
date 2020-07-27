@@ -1,0 +1,21 @@
+# Results
+
+```{r parte_3, include=FALSE}
+#### Code III: Results ####
+```
+
+## Surf clam population at Cucao beach and the operating model
+
+In the period 2011 – 2017, the total abundance of surf clam fluctuated between 68 and 385 million individuals, with a mean of 174.2 million. Total biomass ranged between 1356 and 5407 t, with a mean of 2,994 t, whereas the vulnerable biomass fluctuated between 1261 and 5399 t, with a mean of 2716 t (Table 1).
+
+The operating model (OM) performed well in terms of reproducing the observed changes in surf clam length composition (Fig. 4). The observed length composition showed clear modal progression for sizes $>50$ mm, which was also shown by the fitted model (Fig. 4). According to the OM, the mean length at recruitment ($l_r$) was 8.8 mm (Table 2, last column), with specimens $<25$ mm recruiting in 2013, 2014, and 2017 (Fig. 4). This finding provides evidence that the recruitment process in the surf clam population of Cucao does not occur on an annual basis, but rather with pulses of high recruitment to the population followed by periods of lower or no recruitment, approximately every $2-3$ years.
+
+The population biomass showed a declining trend from 2011 to 2017 (Fig. 5A), tracking the observed total and vulnerable biomass in the surveys. The vulnerable biomass was similar to total biomass, but the spawning biomass was lower due to the maturity ogive and mortality prior to spawning within the year. The average unexploited spawning biomass ($S_0$) was estimated at 1,343 t, which was lower than the spawning biomass estimated for the period 2011-2017. Hence, the target spawning biomass for management purposes was estimated at 537 t. Recruitment was higher in 2011-2017, with above-average values in 2013 and 2014, followed by lower recruitment from 2015 to 2017 (Fig. 5B). The fishing mortality rate fluctuated as the harvest but was higher in 2017 (Fig. 5C). 
+
+## Recruitment simulations and the performance of the management procedure
+
+According to some realizations of the OM simulations, recruitment showed the alternating pattern between higher and lower recruitment (Fig. 6). However, that characteristic in recruitment was obscured in the total number of simulations, within the confidence limits of 90% (Fig. 7A).
+
+The spawning biomass responded to each exploitation rate (Fig. 7B), as reflected by the approximately constant fishing mortality (Fig. 7C). The effective catch was assumed to be identical to the quota due to rigorous control of the harvest. Note that an exploitation rate of 30% produces the highest average fishing mortality, and close to that estimated in 2017 (Fig. 7C).
+
+The current exploitation rate of 25% produced nearly 20% depletion in the spawning biomass (Fig. 8), with a probability of future collapse > 80% (Fig. 9). On the other hand, an exploitation rate of 15% kept the spawning biomass close to the target, i.e., 40% of the unexploited spawning biomass (Fig. 8), with probabilities $>50$% once recovered the biomass (Fig. 9). Indeed, an exploitation rate of 15% was able to revert the declining trend observed in the surf clam spawning biomass (Fig. 8).
