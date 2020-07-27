@@ -3,13 +3,13 @@ title: Assessing a management procedure for a benthic species with non-annual re
 compact-title: no
 documentclass: article
 output:
-  word_document:
-    reference_docx: reference_word_doc.docx
   pdf_document:
     fig_caption: yes
     includes:
       in_header: preamble.sty
     keep_tex: yes
+  word_document:
+    reference_docx: reference_word_doc.docx
 header-includes: \usepackage{lineno} \usepackage{placeins} \linenumbers
 geometry: left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,headheight=12pt,letterpaper
 classoption: 12pt
