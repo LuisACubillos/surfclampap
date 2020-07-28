@@ -3,13 +3,13 @@ title: Assessing a management procedure for a benthic species with non-annual re
 compact-title: no
 documentclass: article
 output:
+  word_document:
+    reference_docx: reference_word_doc.docx
   pdf_document:
     fig_caption: yes
     includes:
       in_header: preamble.sty
     keep_tex: yes
-  word_document:
-    reference_docx: reference_word_doc.docx
 header-includes: \usepackage{lineno} \usepackage{placeins} \linenumbers
 geometry: left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,headheight=12pt,letterpaper
 classoption: 12pt
@@ -39,7 +39,7 @@ library(docxtools)
 
 # Abstract
 
-The exploitation of benthic species by artisanal fishers in coastal management areas is expected to be sustainable under a management procedure (MP), in which data from direct stock assessments are the main input to estimate annual quotas. The adequacy of such an MP has not been assessed for cases where recruitment does not occur annually. One such case is the surf clam Mesodesma donacium fishery in northern Patagonia, with a current MP that prescribes harvesting 25% of the vulnerable stock each year. We used data from direct stock assessments conducted in 2011-2017 to condition an operating model for the dynamics of a surf clam population at Cucao beach. Simulations showed that the current exploitation rate of 25% implies an 80% probability of future collapse. Exploitation rates close to 15% are required to ensure the sustainability of this fishery. These results highlight the need to revisit the assumption of annual recruitment in this MP, which is currently utilized for most artisanal benthic fisheries along the Chilean coast, and probably other regions. It is advisable to consider alternative harvest-control rules, and to take advantage of direct annual estimates of biomass to develop integrated stock-assessment models.
+The exploitation of benthic species by artisanal fishers in coastal management areas is expected to be sustainable under a management procedure (MP), in which data from direct stock assessments are the main input to estimate annual quotas. The adequacy of such an MP has not been assessed for cases where recruitment does not occur annually. One such case is the surf clam _Mesodesma donacium_ fishery in northern Patagonia, with a current MP that prescribes harvesting 25% of the vulnerable stock each year. We used data from direct stock assessments conducted in 2011-2017 to condition an operating model for the dynamics of a surf clam population at Cucao beach. Simulations showed that the current exploitation rate of 25% implies an 80% probability of future collapse. Exploitation rates close to 15% are required to ensure the sustainability of this fishery. These results highlight the need to revisit the assumption of annual recruitment in this MP, which is currently utilized for most artisanal benthic fisheries along the Chilean coast, and probably other regions. It is advisable to consider alternative harvest-control rules, and to take advantage of direct annual estimates of biomass to develop integrated stock-assessment models.
 
 **Key words**: benthic, management strategy evaluation, artisanal-fisher, management areas.
 
