@@ -6,7 +6,7 @@
 
 ## Study area and data sources
 
-The study area is Cucao beach (24º36’S-74º08’W), located on the western shore of Chiloé island, northern Chilean Patagonia (Fig. 1). Over the past decade, Cucao has been one of the main harvesting areas for the surf clam _M. donacium_, with three organizations of artisanal fishers having territorial use rights since 2015 (Fig. 1). The data were obtained from six stock assessment surveys carried out between 2011 and 2017 (Table 1). Before 2015, the stock assessments of surf clam were carried out to establish annual catch quotas. Since 2015, data from the assessments became input information for harvesting surf clam under the AMEBR management procedure.
+The study area is Cucao beach (24º36’S-74º08’W), located on the western shore of Chiloé island, northern Chilean Patagonia (Fig. 1). Over the past decade, Cucao has been one of the main harvesting areas for the surf clam _M. donacium_, with three organizations of artisanal fishers having territorial use rights since 2015 (Fig. 1). The data were obtained from six stock assessment surveys carried out between 2011 and 2017 (Table 1). Before 2015, the stock assessments of surf clam were carried out to establish annual catch quotas [@Leal2014]. Since 2015, data from the assessments became input information for harvesting surf clam under the AMEBR management procedure.
 
 ## Evaluation of the management procedure
 
@@ -52,7 +52,7 @@ where $F_i$ is the annual fishing mortality rate, and $s_l$ is the selectivity a
 
 7) $s_l =0 \text{   if   } l < 50 \text{;  or   } s_l = 1 \text{     if      } l \geqslant 50$
 
-The selectivity in Eq. 7 is a ‘knife-edge’ function of minimum legal size ($lc=50$ mm.
+The selectivity in Eq. 7 is a ‘knife-edge’ function of minimum legal size ($l_c=50$) mm.
 
 The model for observations consisted of the total annual harvest and total biomass in the surveys. Catch by number was estimated according to the Baranov catch equation, i.e.,
 
@@ -72,7 +72,7 @@ The population biomass at the time of the survey (within the year) was computed 
 
 11) $B_i=\psi \sum_l v_l W_l N_{i,l} e^{-\tau Z_{i,l}}$
 
-where $\psi$ is the catchability coefficient and assumed to be equal to 0.99, $v_l$ is the selectivity at length of the survey and assumed to be constant and equal to 1 for all length classes, and $\tau$ is the time of year in which the stock assessment survey was carried out. After that, the vulnerable biomass in the direct stock assessment surveys ($V_i$) was simulated according to:
+where $\psi$ is the catchability coefficient and assumed to be equal to 0.99, $v_l$ is the selectivity at length of the survey and assumed to be constant and equal to 1 for all length classes, and $\tau$ is the time of year in which the stock assessment survey was carried out (Table 1). After that, the vulnerable biomass in the direct stock assessment surveys ($V_i$) was simulated according to:
 
 12) $V_i = \psi \sum_l v_l W_l N_{i,l} e^{-\tau Z_{i,l}}$
 
@@ -80,7 +80,7 @@ Total biomass was computed as the sum of products between the abundance and the 
 
 13) $S_i=\sum_l m_l W_l N_l e^{-T_s Z_{i,l}}$
 
-where $m_l$ is the female maturity ogive, $T_s$ is the beginning of the spawning time within a year (set at 0.81). The model was conditioned to the available data and known surf clam life-history parameters and consisted of estimating the unknown parameters by fitting the population dynamics to the data. The objective function consisted of negative log-likelihood functions and penalized priors (Table 2 and Table 3). The model was conditioned through an estimation procedure implemented in ADMB [@Fournier2012].
+where $m_l$ is the female maturity ogive, $T_s$ is the beginning of the spawning time within a year (set at 0.81). The model was conditioned to the available data and known surf clam life-history parameters and consisted of estimating the unknown parameters by fitting the population dynamics to the data (Table 1 and 2). The objective function consisted of negative log-likelihood functions and penalized priors (Table 2 and Table 3). The model was conditioned through an estimation procedure implemented in ADMB [@Fournier2012].
 
 ## Section C: Simulation of the management procedure
 
@@ -98,4 +98,4 @@ The management procedure considered the current harvest rate of 25%, but for com
 
 ## Section D: Performance evaluation
 
-The trajectory of simulated recruitment, spawning biomass, and fishing mortality resulting from the MP was summarized with confidence intervals of 90% by applying a percentile method to all realizations obtained by MCMC. Depletion was computed as the ratio between the spawning biomass in a given year and the average unexploited spawning biomass. Also, a reduction of 40% in the spawning biomass from the average unexploited value was considered as a target reference point, i.e., $S_{\text{target}} = 0.4S0$. Therefore, exploitation rates generating reductions below the target were considered unsustainable for the surf clam population. The probability of keeping the target was computed as $Pr[S_i⁄S_{\text{target}} > 1]$, whereas the probability of a collapse was computed as $Pr[S_i⁄S_{\text{target}} \leq 0.5]$. Exploitation rates generating probabilities of achieving the target above 0.5 were used as a reference for good performance.
+The trajectory of simulated recruitment, spawning biomass, and fishing mortality resulting from the MP was summarized with confidence intervals of 90% by applying a percentile method to all realizations obtained by MCMC. Depletion was computed as the ratio between the spawning biomass in a given year and the average unexploited spawning biomass. Also, a reduction of 40% in the spawning biomass from the average unexploited value was considered as a target reference point, i.e., $S_{\text{target}} = 0.4S_0$. Therefore, exploitation rates generating reductions below the target were considered unsustainable for the surf clam population. The probability of keeping the target was computed as $Pr[S_i⁄S_{\text{target}} > 1]$, whereas the probability of a collapse was computed as $Pr[S_i⁄S_{\text{target}} \leq 0.5]$. Exploitation rates generating probabilities of achieving the target above 0.5 were used as a reference for good performance.
